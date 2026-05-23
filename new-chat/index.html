@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>想把今天写给你</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero" aria-label="告白">
+        <img class="hero__image" src="assets/hero-love.png" alt="黄昏屋顶花园里，两个人牵手看向城市灯光" />
+        <div class="hero__shade"></div>
+        <nav class="topbar" aria-label="页面导航">
+          <span class="brand">To My Love</span>
+          <a href="#letter">情书</a>
+          <a href="#moments">瞬间</a>
+          <a href="#promise">约定</a>
+        </nav>
+        <div class="hero__content">
+          <p class="eyebrow">这是一封会发光的信</p>
+          <h1>我喜欢你，<span>比昨天更多一点。</span></h1>
+          <p class="hero__copy">
+            遇见你之后，很多普通的日子都变得有了名字。想把温柔、认真、偏爱和未来，
+            都慢慢交到你手里。
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#letter">读给你听</a>
+            <button class="button button--ghost" id="surpriseBtn" type="button">点亮小惊喜</button>
+          </div>
+        </div>
+        <div class="scroll-hint">慢慢往下</div>
+      </section>
+
+      <section class="letter" id="letter">
+        <div class="section-heading">
+          <p>Dear</p>
+          <h2>给我最想偏爱的人</h2>
+        </div>
+        <article class="letter-paper">
+          <p>亲爱的你：</p>
+          <p>
+            我一直觉得，喜欢不是突然把世界变得很夸张，而是从某一天开始，
+            我会在看到好看的晚霞时想起你，在听见一首温柔的歌时想起你，
+            在完成一件小事后，也想第一个告诉你。
+          </p>
+          <p>
+            你不是某个浪漫桥段里的配角。你是我认真生活时，最想一起走下去的人。
+            我想和你分享热闹，也想陪你度过安静；想听你说今天发生了什么，
+            也想在你累的时候，给你一个不用逞强的地方。
+          </p>
+          <p>
+            所以今天，我把这句话郑重地放在这里：我爱你。不是一时兴起，
+            而是每一个明天都想继续选择你。
+          </p>
+        </article>
+      </section>
+
+      <section class="moments" id="moments">
+        <div class="section-heading">
+          <p>Moments</p>
+          <h2>我想收藏的四个瞬间</h2>
+        </div>
+        <div class="moment-grid">
+          <article class="moment-card">
+            <span>01</span>
+            <h3>第一次心动</h3>
+            <p>也许只是一个眼神、一句话，后来却在心里反复亮起。</p>
+          </article>
+          <article class="moment-card">
+            <span>02</span>
+            <h3>每次想你</h3>
+            <p>不是因为孤单才想你，是生活里出现了美好的东西，就自然想给你。</p>
+          </article>
+          <article class="moment-card">
+            <span>03</span>
+            <h3>并肩散步</h3>
+            <p>最喜欢那些不用赶时间的路，因为身边是你，目的地就不急了。</p>
+          </article>
+          <article class="moment-card">
+            <span>04</span>
+            <h3>未来计划</h3>
+            <p>想把很多“以后有机会”变成“我们一起去”。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="promise" id="promise">
+        <div class="promise__panel">
+          <div>
+            <p class="eyebrow">A Little Promise</p>
+            <h2>如果你愿意</h2>
+            <p>
+              我想把爱落实到每一天：好好说话，认真回应，主动靠近，
+              在你需要的时候一直都在。
+            </p>
+          </div>
+          <div class="promise__box" aria-live="polite">
+            <p id="promiseText">今天的约定：牵着你的手，把普通日子过成值得纪念的样子。</p>
+            <button class="icon-button" id="promiseBtn" type="button" aria-label="换一句约定">↻</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="answer" aria-label="最终告白">
+        <p>这世界很大，但我最想奔向的地方，是你身边。</p>
+        <h2>做我一直偏爱的人，好吗？</h2>
+        <div class="answer__actions">
+          <button class="button button--primary" id="yesBtn" type="button">好</button>
+          <button class="button button--soft" id="alsoYesBtn" type="button">当然好</button>
+        </div>
+        <p class="answer__note" id="answerNote">等你点头的这一秒，也很可爱。</p>
+      </section>
+    </main>
+
+    <div class="sparkle-layer" id="sparkleLayer" aria-hidden="true"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
